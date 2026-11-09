@@ -14,7 +14,6 @@ Plain HTML/CSS/JS, so no build step is needed. To serve it with GitHub Pages: *S
 - **News**: edit `js/news.js` and add new items at the top of the list.
 - **Team photos**: put images in `assets/img/team/` and replace an `<div class="avatar">..</div>` with
   `<img class="avatar" src="assets/img/team/name.jpg" alt="Name">` in `team.html`.
-- **Funding logo**: `assets/img/eu-erc-logo.png`. Overwrite it with the official EU/ERC logo file if needed.
 - **Figures**: `assets/img/figures/`, taken from the Earth2Sea proposal and Lau et al. (2026).
 - **Colours/fonts**: CSS variables at the top of `css/style.css`.
 
