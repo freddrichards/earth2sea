@@ -14,8 +14,10 @@
   var items = window.EARTH2SEA_NEWS || [];
   if (list) {
     var fmt = function (iso) {
-      var d = new Date(iso + "T12:00:00");
-      return d.toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric" });
+      var monthOnly = /^\d{4}-\d{2}$/.test(iso);
+      var d = new Date((monthOnly ? iso + "-01" : iso) + "T12:00:00");
+      var opts = monthOnly ? { month: "long", year: "numeric" } : { day: "numeric", month: "long", year: "numeric" };
+      return d.toLocaleDateString("en-GB", opts);
     };
     items.forEach(function (n) {
       var li = document.createElement("li");
