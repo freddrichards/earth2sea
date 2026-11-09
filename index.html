@@ -3,9 +3,135 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My site</title>
+  <title>Earth2Sea | Dynamic Earth Impacts on Past, Present, and Future Sea Levels</title>
+  <meta name="description" content="Earth2Sea is an ERC Starting Grant project at Imperial College London quantifying how mantle dynamics affect past, present and future sea levels.">
+  <link rel="icon" href="assets/img/earth2sea-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>It works</h1>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html"><img src="assets/img/earth2sea-logo.png" alt="Earth2Sea logo"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">&#9776;</button>
+      <nav class="nav" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="workplan.html">Work Plan</a>
+        <a href="team.html">Team</a>
+        <a href="results.html">Results</a>
+      </nav>
+      <a class="header-erc" href="https://erc.europa.eu" target="_blank" rel="noopener"><img src="assets/img/eu-erc-logo.png" alt="Funded by the European Union – European Research Council"></a>
+    </div>
+  </header>
+
+  <section class="hero" aria-label="Introduction">
+    <!-- Ice sheet, ocean and mantle scene -->
+    <svg class="scene" viewBox="0 0 1440 560" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="iceG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d4ecfb"/>
+        </linearGradient>
+        <linearGradient id="mantleG" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#5a2f3a" stop-opacity="0.85"/><stop offset="0.5" stop-color="#b8432b"/><stop offset="1" stop-color="#f39a45"/>
+        </linearGradient>
+      </defs>
+      <!-- ice sheet profile -->
+      <path d="M0 0 H1440 V70 C1300 72 1240 110 1150 118 L1150 138 L980 140 C900 140 820 150 760 150 C620 150 520 120 420 100 C300 80 160 60 0 58 Z" fill="url(#iceG)"/>
+      <path d="M1150 118 L1150 138 L980 140 L1000 124 Z" fill="#c4e2f6"/>
+      <!-- ocean waves -->
+      <g opacity="0.35" fill="#ffffff">
+        <path class="wave" d="M0 235 Q90 220 180 235 T360 235 T540 235 T720 235 T900 235 T1080 235 T1260 235 T1440 235 T1620 235 T1800 235 T1980 235 T2160 235 T2340 235 T2520 235 T2700 235 T2880 235 V250 H0 Z"/>
+        <path class="wave slow" d="M0 285 Q120 270 240 285 T480 285 T720 285 T960 285 T1200 285 T1440 285 T1680 285 T1920 285 T2160 285 T2400 285 T2640 285 T2880 285 V295 H0 Z"/>
+      </g>
+      <!-- crust / seafloor -->
+      <path d="M0 370 C200 350 380 380 560 360 C760 338 900 372 1080 355 C1240 340 1340 362 1440 350 V400 H0 Z" fill="#d08e5f" opacity="0.9"/>
+      <!-- mantle with upwelling plume -->
+      <path d="M0 395 C200 378 380 405 560 386 C760 366 900 398 1080 382 C1240 368 1340 388 1440 378 V560 H0 Z" fill="url(#mantleG)"/>
+      <path d="M690 560 C690 500 680 460 640 440 C600 425 560 430 540 420 C600 405 680 400 720 402 C760 400 840 405 900 420 C880 430 840 425 800 440 C760 460 750 500 750 560 Z" fill="#f08080" opacity="0.75"/>
+    </svg>
+    <div class="glow" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-logo"><img src="assets/img/earth2sea-logo.png" alt="Earth2Sea"></div>
+      <div>
+        <span class="tag">ERC Starting Grant &middot; 2025&ndash;2030</span>
+        <h1>Dynamic Earth Impacts on Past, Present, and Future Sea Levels</h1>
+        <p class="lede">Earth2Sea links the slow churn of Earth&rsquo;s mantle to the fate of the polar ice sheets, to deliver more reliable predictions of how fast, and where, sea level will rise.</p>
+        <a class="btn" href="workplan.html">Explore the project</a>
+        <a class="btn ghost" href="https://cordis.europa.eu/project/id/101221058" target="_blank" rel="noopener">CORDIS record</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section>
+      <div class="wrap with-sidebar">
+        <div>
+          <h2>About the project</h2>
+          <p>Nearly <strong>700 million people</strong> live along flood-susceptible coastlines, and actionable sea-level forecasts are urgently needed to protect these communities and their critical infrastructure. Yet current projections are highly uncertain: the last Intergovernmental Panel on Climate Change report found that end-of-century sea level could lie anywhere from <strong>0.3 to 2&nbsp;m</strong> above present.</p>
+          <p>Most of this uncertainty comes from <strong>ice-sheet instabilities</strong> which, once triggered, could cause rapid sea-level rise. It can be substantially reduced by calibrating ice-sheet models so that they reproduce ice volumes during past warm periods. But these calibrations are now in question, following the discovery that <strong>flow in Earth&rsquo;s mantle</strong> moves the planet&rsquo;s surface up and down far faster than once thought.</p>
+
+          <div class="stats">
+            <div class="stat"><b>~700&nbsp;M</b><span>people living on flood-threatened coasts</span></div>
+            <div class="stat"><b>25&ndash;50%</b><span>possible overestimate of past ice volumes</span></div>
+            <div class="stat"><b>~10&times;</b><span>underestimate of post-glacial bedrock rebound rates</span></div>
+          </div>
+
+          <p>This paradigm shift implies that accepted estimates of past ice volume may be too high, because the ancient shorelines used to infer them have since been uplifted by mantle flow, and that existing models miss key physics, underestimating how quickly bedrock rebounds and overestimating ice-sheet instability.</p>
+          <p>Earth2Sea will tackle these issues by combining new sea-level datasets with innovative reconstructions of mantle flow, producing <strong>probabilistic, geodynamically corrected estimates</strong> of past ice-sheet volume and sensitivity. Calibrating ice-sheet models against this revised picture of the past, and including feedbacks between the mantle and ice sheets, will yield the <strong>first geodynamically accurate global and regional sea-level projections</strong>, helping decision-makers plan long-term coastal defences.</p>
+
+          <div class="cards">
+            <div class="card ice">
+              <div class="icon" aria-hidden="true">&#10052;</div>
+              <h3>Ice</h3>
+              <p>How did the Antarctic and Greenland ice sheets respond to past warm climates, and how stable are they today?</p>
+            </div>
+            <div class="card ocean">
+              <div class="icon" aria-hidden="true">&#127754;</div>
+              <h3>Ocean</h3>
+              <p>How high did sea level rise during past warm periods, and how fast will it rise along our coastlines?</p>
+            </div>
+            <div class="card fire">
+              <div class="icon" aria-hidden="true">&#128293;</div>
+              <h3>Mantle</h3>
+              <p>How does flowing rock deep inside Earth reshape the surface beneath ice and ocean, through space and time?</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="sidebar" aria-labelledby="news-heading">
+          <h2 id="news-heading">Latest news</h2>
+          <ul class="news-list" id="news-list"></ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Project objectives</h2>
+        <p>Earth2Sea will quantify the impact of previously neglected interactions between the solid Earth and the cryosphere on sea-level predictions, through three objectives:</p>
+        <ol class="objectives">
+          <li><strong>Pin down past sea levels.</strong> Generate probabilistic estimates of peak global mean sea level during key warm periods in Earth&rsquo;s history, correcting ancient shorelines for mantle-driven uplift and subsidence.</li>
+          <li><strong>Reassess past ice-sheet sensitivity.</strong> Quantify how mantle-driven changes in bedrock topography and geothermal heat flow altered the sensitivity of polar ice sheets to warming.</li>
+          <li><strong>Test whether a &ldquo;soft&rdquo; mantle stabilises ice sheets.</strong> Determine whether the mantle&rsquo;s timescale-dependent behaviour causes faster bedrock rebound that helps protect vulnerable ice sheets, and include this in projections of future sea level.</li>
+        </ol>
+        <p>Results will feed an <strong>interactive web app</strong> that lets anyone see how fast sea level is likely to rise along their local coastline, and how certain we are.</p>
+        <p><a class="btn" href="workplan.html">See the work plan</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <a class="footer-erc" href="https://erc.europa.eu" target="_blank" rel="noopener"><img src="assets/img/eu-erc-logo.png" alt="Funded by the European Union – European Research Council"></a>
+      <p>Earth2Sea is funded by the European Union (ERC, Earth2Sea, grant agreement No.&nbsp;101221058). Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.</p>
+      <p>Hosted by<br><a href="https://www.imperial.ac.uk/earth-science" target="_blank" rel="noopener">Department of Earth Science &amp; Engineering, Imperial College London</a><br><a href="https://cordis.europa.eu/project/id/101221058" target="_blank" rel="noopener">CORDIS project page</a></p>
+    </div>
+    <div class="wrap"><small>&copy; <span id="year">2026</span> Earth2Sea project</small></div>
+  </footer>
+
+  <script src="js/news.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
